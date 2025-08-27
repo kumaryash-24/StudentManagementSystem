@@ -31,9 +31,11 @@ Here's a glimpse of the application's stunning "Crimson Peak" user interface.
 
 | Portal Page | Student Directory Page |
 | :---: | :---: |
-| ![Student Management Portal](screenshots/portal.png) | ![Student Directory](screenshots/directory.png) |
+| ![Student Management Portal](https://github.com/user-attachments/assets/8a443e49-92ba-4aed-9a6c-645bb80709bb) | ![Student Directory](https://github.com/user-attachments/assets/305d4ab6-34e0-4acd-9ece-ceaaa956e0ef)
+ 
 
 ---
+
 
 ## 🚀 Features
 
