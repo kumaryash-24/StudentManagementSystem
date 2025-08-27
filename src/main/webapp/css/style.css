@@ -1,0 +1,269 @@
+/* Import a premium, modern font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+@keyframes fadeInFromBottom {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    
+    background-image: linear-gradient(rgba(29, 53, 87, 0.85), rgba(29, 53, 87, 0.85)), url('https://images.pexels.com/photos/1624496/pexels-photo-1624496.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #F1FAEE;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: rgba(29, 53, 87, 0.75); /* Deep navy, semi-transparent */
+    padding: 50px 60px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 90%;
+    max-width: 900px;
+    backdrop-filter: blur(15px); /* The frosted glass effect */
+    border: 1px solid rgba(241, 250, 238, 0.1);
+    animation: fadeInFromBottom 0.8s ease-out;
+}
+
+/* ---Typography --- */
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2.8em;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Gradient highlight for headings */
+.highlight {
+    background: linear-gradient(45deg, #E63946, #F78C93); /* Crimson red gradient */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    color: #A8DADC; 
+    margin-bottom: 40px;
+    font-size: 1.1em;
+    line-height: 1.7;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    background-image: linear-gradient(45deg, #E63946 0%, #a32731 100%); /* Crimson gradient */
+    color: white;
+    padding: 16px 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20px rgba(230, 57, 70, 0.5);
+}
+
+.btn:hover {
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 0 35px rgba(230, 57, 70, 0.8);
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.student-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.student-table th, .student-table td {
+    padding: 20px;
+    text-align: left;
+    border-bottom: 1px solid rgba(241, 250, 238, 0.1);
+}
+
+.student-table thead tr {
+    background-color: rgba(230, 57, 70, 0.2); /* Subtle crimson header */
+    color: #ffffff;
+    font-size: 1.1em;
+}
+
+.student-table tbody tr {
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.student-table tbody tr:last-of-type {
+    border-bottom: none;
+}
+
+.student-table tbody tr:hover {
+    background-color: rgba(255, 255, 255, 0.07);
+    transform: scale(1.02);
+}
+
+/* --- Sleek Form Design --- */
+.student-form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 30px;
+    text-align: left;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.form-group label {
+    font-weight: 500;
+    color: #A8DADC;
+    font-size: 1.1em;
+}
+.form-input {
+    background-color: rgba(29, 53, 87, 0.9);
+    border: 1px solid rgba(241, 250, 238, 0.1);
+    color: #F1FAEE;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    padding: 15px 20px;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+.form-input:focus {
+    outline: none;
+    border-color: #E63946;
+    box-shadow: 0 0 15px rgba(230, 57, 70, 0.6);
+}
+
+/* --- Other Styles --- */
+.success-icon {
+    font-size: 6em;
+    margin-bottom: 20px;
+    color: #E63946;
+}
+.btn-secondary {
+    color: #A8DADC;
+    text-decoration: none;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: color 0.3s ease;
+}
+.btn-secondary:hover {
+    color: #ffffff;
+}
+
+/* --- Styles for Edit/Delete Buttons in Table --- */
+.actions-cell {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.action-btn {
+    color: white;
+    padding: 9px 15px;
+    border: none;
+    border-radius: 8px; /* Slightly squared for a modern look */
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.action-btn.edit {
+    background-color: #48cae4; /* A vibrant, modern teal */
+    box-shadow: 0 0 15px rgba(72, 202, 228, 0.3);
+}
+
+.action-btn.delete {
+    background-color: #E63946; /* The theme's crimson red */
+    box-shadow: 0 0 15px rgba(230, 57, 70, 0.3);
+}
+
+.action-btn:hover {
+    transform: translateY(-3px); /* Lifts the button */
+}
+
+.action-btn.edit:hover {
+    box-shadow: 0 0 25px rgba(72, 202, 228, 0.7); /* Intensifies the glow */
+}
+
+.action-btn.delete:hover {
+    box-shadow: 0 0 25px rgba(230, 57, 70, 0.7); /* Intensifies the glow */
+}
+
+/* --- Styles for Search Bar --- */
+.search-container {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.search-form {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+}
+
+.search-input {
+    width: 100%;
+    border: 1px solid rgba(241, 250, 238, 0.1);
+    background-color: rgba(29, 53, 87, 0.9);
+    color: #F1FAEE;
+    padding: 15px 20px;
+    font-size: 16px;
+    border-radius: 50px 0 0 50px; /* Rounded on the left */
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #E63946;
+    box-shadow: 0 0 15px rgba(230, 57, 70, 0.6);
+}
+
+.search-btn {
+    border: none;
+    background-image: linear-gradient(45deg, #E63946 0%, #a32731 100%);
+    color: white;
+    padding: 0 25px;
+    border-radius: 0 50px 50px 0; /* Rounded on the right */
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+    opacity: 0.9;
+}
