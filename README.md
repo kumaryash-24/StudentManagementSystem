@@ -4,7 +4,7 @@
 </p>
              
 <h1 align="center">Student Management System</h1>
-
+                      
 <p align="center">
   A full-featured, modern web application for managing student records, built with a robust Java backend and a stunning, respon sive user interface.
 </p>
