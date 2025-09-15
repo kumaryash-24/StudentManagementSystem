@@ -8,7 +8,7 @@
 <p align="center">
   A full-featured, modern web application for managing student records, built with a robust Java backend and a stunning, respon sive user interface.
 </p>      
-
+                   
 <p align="center">
     <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java">
     <img src="https://img.shields.io/badge/Servlets-D02324?style=for-the-badge&logo=apache&logoColor=white" alt="Servlets">
